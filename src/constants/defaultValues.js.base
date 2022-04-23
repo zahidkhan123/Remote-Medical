@@ -1,0 +1,7 @@
+export const defaultMenuType = "menu-default";
+export const defaultLocale = "en";
+
+export const authHeaders = {
+  "Content-Type": "application/json",
+  "AUTH-TOKEN": localStorage.getItem("auth_token")
+}

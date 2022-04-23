@@ -1,0 +1,121 @@
+.bm-burger-button {
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  left: 36px;
+  top: 16px;
+  button:focus{
+    outline: none;
+  }
+}
+  
+  /* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: white;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: black;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  color: white;
+  margin-right: 10px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+background: white;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: relative;
+  height: 100%;
+}
+
+/* General sidebar styles */
+
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.9em;
+}
+
+/* Individual item */
+.bm-item {
+display: inline-block;
+padding: 25px;
+width: 230px;
+padding-left: 0px;
+border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+/* border-bottom: 0.5px solid white; */
+text-decoration: none !important;
+font: normal normal normal 15px/8px Roboto;
+color: white;
+-webkit-background-clip: padding-box; /* for Safari */
+background-clip: padding-box;
+text-transform: capitalize;
+margin-left: 20px;
+}
+
+.bm-item-inner-label {
+    margin-left: 5px;
+}
+
+.bm-item a {
+    text-decoration: none !important;
+}
+
+
+/* Styling of overlay */
+.bm-overlay {
+
+background: rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+.bm-menu {
+  font-size: 1rem;
+  padding: 0px;
+  background-color: #228CAA;
+  position: relative;
+  overflow: auto !important;
+  nav {
+    a{
+      color: white;
+    }
+  }
+
+}
+.bm-menu nav a:active {
+  color: black;
+}
+.bm-menu nav a:hover {
+  color: black;
+}
+
+.bm-item-list {
+    padding: 0px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+
+
+

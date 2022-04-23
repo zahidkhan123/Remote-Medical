@@ -1,0 +1,259 @@
+// SASS Variables
+$white: #fff;
+$navy: #2e2f35;
+$navy-dark: #1e1e24;
+$navy-light: #494a50;
+$grey: #a5a5a4;
+$green: #20c270;
+$green-dark: #18a960;
+
+// Moves menu to the left/right side of screen
+$menu-orientation: left;
+
+@media screen and (max-width: 600px) {
+  .pushNav {
+    width: 75%;
+    #{$menu-orientation}: 95%
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .pushNav {
+    width: 350px;
+    #{$menu-orientation}: -350px;
+  }
+}
+
+ul.pushNav {
+  padding: 0;
+  //margin: 0;
+  list-style-type: none;
+}
+
+.pushNav {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  background: white;
+  transition: ease-in-out 0.5s;
+    hr {
+    border: 1px solid #555;
+  }
+}
+
+.pushNav-close {
+  width: 30%;
+  height: 100vh;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  background: white;
+  transition: ease-in-out 0.5s;
+    hr {
+    border: 1px solid #555;
+  }
+}
+
+.pushNav ,.pushNav a {
+   font-size: 1em;
+   font-family: helvetica, sens-serif;
+   font-weight: 100;
+   color: $white;
+   text-decoration: none;
+}
+
+.pushNavIsOpen {
+  height: 100%;
+}
+
+.js-topPushNav.isOpen, .pushNav_level.isOpen {
+ #{$menu-orientation} : 0;
+}
+
+.closeLevel, .openLevel {
+  cursor: pointer;
+}
+
+.openLevel, .closeLevel, .pushNav a {
+  padding: 1em 0;
+  display: block;
+  text-indent: 20px;
+  transition: background 0.4s ease-in-out;
+
+}
+
+.hdg {
+    background-color: $navy-dark;
+}
+
+.width-setting{
+  width: 40px;
+}
+
+.closeLevel, closelevel > i {
+  font-size: 1em;
+  color: $grey;
+}
+
+.burger {
+  position: relative;
+  bottom: 76px;
+  left: 35px;
+  i {
+    font-size: 18px;
+  }
+}
+
+.screen {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100px;
+  height: 0;
+  bottom: 0;
+  #{$menu-orientation}: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.pushNavIsOpen .screen {
+  height: 100%;
+  opacity: 1;
+}
+
+.burger-menu-nav {
+  width: 350px;
+  height: 100vh;
+  position: absolute;
+  top: 445px;
+  .wrapper{
+    align-items: center;
+  }
+}
+
+
+.pushNav-close li{
+  list-style: none;
+  margin-left: -40px;
+}
+
+.burger-menu-nav-close {
+  width: 150px;
+  height: 100vh;
+  position: absolute;
+}
+
+.entity-burger-menu-overflows {
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #228CAA; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #228CAA; 
+}
+
+
+.image-setting-entity-burger-menu {
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+}
+
+.entity-burger-menu-p {
+  text-transform: capitalize;
+  font: normal normal normal 14px/17px Roboto;
+  letter-spacing: 0px;
+  color: #57585A;
+  opacity: 1;
+  width: auto;
+  text-align: center;
+  height: auto;
+  margin: 23px;
+}
+
+.entity-burger-menu-span {
+  margin: 7px;
+  padding-top: 20px;
+  display: flex;
+  margin-left: 23px;
+  height: 80px;
+  width: 280px;
+}
+
+.entity-burger-menu-label-link {
+  text-decoration: none !important;
+}
+
+.entity-burger-menu-label-link-checked {
+  background-color: #177B98;
+  border: none;
+  .entity-burger-menu-p{
+    color: white;
+  }
+}
+
+
+
+// Font Awesome styles - delete if not using font awesome
+.fa {
+  display: inline;
+  padding: 5px;
+}
+
+// Delete body and .wrapper styles
+//body {
+//  background-size: 100% auto;
+//  background-repeat: no-repeat;
+//  background-color: white;
+//}
+
+.wrapper {
+  // max-width: 625px;
+  // margin: 120px auto;
+  // padding: 0 20px;
+  // color: $white;
+  // font-family: "Trebuchet MS", Helvetica, sans-serif;
+  // font-weight: 100;
+  // font-size: 1.1em;
+  // line-height: 1.4em;
+  
+  a {
+    color: $green;
+    text-decoration: none;
+  }
+  
+  button {
+    background-color: $green;
+    margin: 50px auto;
+    display: block;
+    padding: 10px 40px;
+    border: none;
+    
+    &:hover {
+      background-color:  #228CAA;
+    }
+    
+    a {
+      color: $white;
+      font-size: 2em;
+    }
+  }
+}
